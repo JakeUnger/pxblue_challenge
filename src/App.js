@@ -64,13 +64,13 @@ class App extends React.Component {
       <div>
         {this.getMobileNavigationMenu()}
         <div>
-          <AppBar position="static" color="primary">
+          <AppBar position="sticky" color="primary">
             <Toolbar className={classes.toolbar}>
               <IconButton color="inherit" onClick={() => this.toggleDrawer()}>
                 <MenuIcon />
               </IconButton>
               <Typography variant="h6" color="inherit">
-                Selected Page Name
+                Eaton - Resources
               </Typography>
             </Toolbar>
           </AppBar>
@@ -81,13 +81,6 @@ class App extends React.Component {
     );
   }
 
-  /*
-  The functions below have been used to abstract various pieces of the navigation
-  menu. This allows them to be shared between the mobile size navigation and the 
-  desktop size.
-*/
-
-  // returns the layout for the panel of main application pages
   getPrimaryNavigation() {
     const { classes } = this.props;
     return (
@@ -105,7 +98,7 @@ class App extends React.Component {
 
         {this.NavigationListItem({
           title: "Resources",
-          route: "/products",
+          route: "/resources",
           icon: <FolderIcon />
         })}
       </List>
@@ -152,7 +145,6 @@ class App extends React.Component {
     );
   }
 
-  // returns the layout for the panel of user pages (Profile, Settings)
   getUserNavigation() {
     const { classes } = this.props;
     return (
