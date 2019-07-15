@@ -139,7 +139,6 @@ class Resources extends React.Component {
                 <div>
                   <List>
                     <ListItem
-                      key={1}
                       button
                       component="a"
                       href="https://github.com/pxblue/colors/tree/master"
@@ -149,66 +148,7 @@ class Resources extends React.Component {
                     </ListItem>
                     <TableCell>
                       <TableRow>
-                        <ListItem
-                          button
-                          component="a"
-                          href="https://www.npmjs.com/package/@pxblue/colors"
-                        >
-                          <img src="https://img.shields.io/npm/v/@pxblue/colors.svg?label=@pxblue/colors&amp;style=flat" />
-                        </ListItem>
-                      </TableRow>
-                      <ListItem
-                        button
-                        component="a"
-                        href="https://www.npmjs.com/package/@pxblue/colors-branding"
-                      >
-                        <img src="https://img.shields.io/npm/v/@pxblue/colors-branding.svg?label=@pxblue/colors-branding&style=flat" />
-                      </ListItem>
-                    </TableCell>
-
-                    <ListItem
-                      key={2}
-                      button
-                      component="a"
-                      href="https://circleci.com/gh/pxblue/colors/tree/master"
-                    >
-                      <CheckIcon />
-                      {item.operating}
-                      <img src="https://img.shields.io/circleci/project/github/pxblue/colors/master.svg?style=flat" />
-                    </ListItem>
-
-                    <ListItem
-                      button
-                      component="a"
-                      href="https://github.com/pxblue/colors/commits/master"
-                    >
-                      <img src="https://img.shields.io/github/last-commit/pxblue/colors/master.svg?style=flat" />
-                    </ListItem>
-                    <ListItem
-                      button
-                      component="a"
-                      href="https://github.com/pxblue/colors/issues?q=is%3Aissue+is%3Aopen+label%3Abug"
-                    >
-                      <img src="https://img.shields.io/github/issues/pxblue/colors/bug.svg?style=flat&label=bugs" />
-                    </ListItem>
-                  </List>
-
-                  <List>
-                    <ListItem
-                      button
-                      component="a"
-                      href="https://github.com/pxblue/colors/tree/master"
-                    >
-                      <FolderIcon />
-                      {item.resource_item}
-                    </ListItem>
-                    <TableCell>
-                      <TableRow>
-                        <ListItem
-                          button
-                          component="a"
-                          href="https://www.npmjs.com/package/@pxblue/colors"
-                        >
+                        <ListItem>
                           <img src="https://img.shields.io/npm/v/@pxblue/colors.svg?label=@pxblue/colors&amp;style=flat" />
                         </ListItem>
                       </TableRow>
