@@ -5,6 +5,7 @@ import App from "./App";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import * as PXBThemes from "@pxblue/themes/react";
 require("typeface-open-sans");
+require("@pxblue/icons/iconfont/PXBlueIcons.css");
 
 render(
   <MuiThemeProvider theme={createMuiTheme(PXBThemes.blue)}>

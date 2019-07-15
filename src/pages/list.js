@@ -1,12 +1,14 @@
 exports.listItems = [
   {
     number: 1,
-    resource_item: "PXBlue Colors"
+    resource_item: "PXBlue Colors",
+    operating: "Status:",
+    version: "Updated"
   },
   {
     number: 2,
-    resource_item: "John Adams",
-    birth_year: 1735,
+    resource_item: "Component-Library",
+    operating: "Status:",
     death_year: 1826,
     took_office: "1797-03-04",
     left_office: "1801-03-04",
@@ -14,7 +16,7 @@ exports.listItems = [
   },
   {
     number: 3,
-    resource_item: "Thomas Jefferson",
+    resource_item: "higcharts",
     birth_year: 1743,
     death_year: 1826,
     took_office: "1801-03-04",
@@ -23,7 +25,7 @@ exports.listItems = [
   },
   {
     number: 4,
-    resource_item: "James Madison",
+    resource_item: "icons",
     birth_year: 1751,
     death_year: 1836,
     took_office: "1809-03-04",
@@ -32,7 +34,7 @@ exports.listItems = [
   },
   {
     number: 5,
-    resource_item: "James Monroe",
+    resource_item: "icons-mui",
     birth_year: 1758,
     death_year: 1831,
     took_office: "1817-03-04",
@@ -41,7 +43,7 @@ exports.listItems = [
   },
   {
     number: 6,
-    resource_item: "John Quincy Adams",
+    resource_item: "mapbox",
     birth_year: 1767,
     death_year: 1848,
     took_office: "1825-03-04",
@@ -50,7 +52,7 @@ exports.listItems = [
   },
   {
     number: 7,
-    resource_item: "Andrew Jackson",
+    resource_item: "symbols-mui",
     birth_year: 1767,
     death_year: 1845,
     took_office: "1829-03-04",
@@ -59,7 +61,7 @@ exports.listItems = [
   },
   {
     number: 8,
-    resource_item: "Martin Van Buren",
+    resource_item: "themes",
     birth_year: 1782,
     death_year: 1862,
     took_office: "1837-03-04",

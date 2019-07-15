@@ -7,6 +7,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import FolderIcon from "@material-ui/icons/Folder";
+import CheckIcon from "@material-ui/icons/Check";
+import Icon from "@material-ui/core/Icon";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -15,6 +17,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import AppBar from "@material-ui/core/AppBar";
 import { withStyles } from "@material-ui/core/styles";
+import { TableRow, TableCell } from "@material-ui/core";
+
 const styles = theme => ({
   banner: {
     background:
@@ -131,21 +135,44 @@ class Resources extends React.Component {
           {this.state.list.map(function(item, i) {
             return (
               <ListItem key={`item-${i}`}>
-                <ListItemIcon>
-                  <FolderIcon />
-                </ListItemIcon>
+                <FolderIcon />
                 <div>
                   <List>
-                    <ListItemText primary={item.resource_item} />
-                    <ListItem href="https://www.npmjs.com/package/@pxblue/colors">
-                      <img src="https://img.shields.io/npm/v/@pxblue/colors.svg?label=@pxblue/colors&amp;style=flat" />
-                    </ListItem>
                     <ListItem
+                      button
+                      component="a"
+                      href="https://github.com/pxblue/colors/tree/master"
+                    >
+                      {item.resource_item}
+                    </ListItem>
+                    <TableCell
+                      button
+                      component="a"
                       href="https://www.npmjs.com/package/@pxblue/colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       <img src="https://img.shields.io/npm/v/@pxblue/colors.svg?label=@pxblue/colors&amp;style=flat" />
+
+                      <ListItem
+                        IconButton
+                        component="a"
+                        href="https://www.npmjs.com/package/@pxblue/colors-branding"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src="https://img.shields.io/npm/v/@pxblue/colors-branding.svg?label=@pxblue/colors-branding&style=flat" />
+                      </ListItem>
+                    </TableCell>
+                    <ListItem
+                      button
+                      component="a"
+                      href="https://circleci.com/gh/pxblue/colors/tree/master"
+                    />
+
+                    <ListItem>
+                      <CheckIcon />
+                      {item.operating}
+
+                      <img src="https://img.shields.io/circleci/project/github/pxblue/colors/master.svg?style=flat" />
                     </ListItem>
                   </List>
                 </div>
