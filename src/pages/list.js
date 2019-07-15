@@ -1,7 +1,7 @@
 exports.listItems = [
   {
     number: 1,
-    resource_item: "PXBlue Colors",
+    resource_item: "PXBLUE COLORS",
     operating: "Status:",
     version: "Updated"
   },
