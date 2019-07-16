@@ -1,14 +1,16 @@
 import React from "react";
 // Material-UI components
-
+import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
-
+import ListItemText from "@material-ui/core/ListItemText";
 import FolderIcon from "@material-ui/icons/Folder";
 import CheckIcon from "@material-ui/icons/Check";
-
+import Icon from "@material-ui/core/Icon";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
 import MenuIcon from "@material-ui/icons/Menu";
 import { listItems } from "./list";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -60,7 +62,7 @@ const styles = theme => ({
   }
 });
 
-class Resources extends React.Component {
+class Design extends React.Component {
   state = {
     list: listItems,
     activeClass: "",
@@ -98,7 +100,7 @@ class Resources extends React.Component {
             </IconButton>
             <div style={{ flex: 1 }}>
               <Typography variant="h6" color="inherit">
-                NPM Packages
+                Design Patterns and Examples
               </Typography>
               <Typography
                 className="sub-text"
@@ -120,11 +122,11 @@ class Resources extends React.Component {
               style={{ opacity: 1 - this.state.opacity / 200 }}
             >
               <Typography variant="h4" color="inherit">
-                Power Xpert Blue Resources
+                Power Xpert Blue
               </Typography>
 
               <Typography variant="h6" color="inherit">
-                NPM Packages
+                Design Patterns
               </Typography>
             </div>
           </Toolbar>
@@ -144,21 +146,19 @@ class Resources extends React.Component {
                       <FolderIcon />
                       {item.resource_item}
                     </ListItem>
-                    <TableCell>
-                      <TableRow>
-                        <ListItem>
-                          <img src="https://img.shields.io/npm/v/@pxblue/colors.svg?label=@pxblue/colors&amp;style=flat" />
-                        </ListItem>
-                      </TableRow>
-                      <ListItem
-                        button
-                        component="a"
-                        href="https://www.npmjs.com/package/@pxblue/colors-branding"
-                      >
-                        <img src="https://img.shields.io/npm/v/@pxblue/colors-branding.svg?label=@pxblue/colors-branding&style=flat" />
-                      </ListItem>
-                    </TableCell>
 
+                    <ListItem>
+                      <img src="https://img.shields.io/npm/v/@pxblue/colors.svg?label=@pxblue/colors&amp;style=flat" />
+                    </ListItem>
+
+                    <ListItem
+                      button
+                      component="a"
+                      href="https://www.npmjs.com/package/@pxblue/colors-branding"
+                    >
+                      <img src="https://img.shields.io/npm/v/@pxblue/colors-branding.svg?label=@pxblue/colors-branding&style=flat" />
+                    </ListItem>
+                    <hr />
                     <ListItem
                       button
                       component="a"
@@ -193,4 +193,4 @@ class Resources extends React.Component {
     );
   }
 }
-export default withStyles(styles)(Resources);
+export default withStyles(styles)(design);

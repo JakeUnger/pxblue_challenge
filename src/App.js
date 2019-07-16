@@ -1,7 +1,7 @@
 // React/Material/PXBlue Basics
-import { Switch, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
-import { EatonColors } from "@pxblue/themes/react";
+
 import { withStyles } from "@material-ui/core/styles";
 
 // Material-UI Components
@@ -23,11 +23,9 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FlagIcon from "@material-ui/icons/Flag";
 import FolderIcon from "@material-ui/icons/Folder";
 
-import InfoIcon from "@material-ui/icons/Info";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import MenuIcon from "@material-ui/icons/Menu";
-import MoveToInboxIcon from "@material-ui/icons/MoveToInbox";
-import SendIcon from "@material-ui/icons/Send";
+
 import SettingsIcon from "@material-ui/icons/Settings";
 import SubdirectoryArrowRightIcon from "@material-ui/icons/SubdirectoryArrowRight";
 
