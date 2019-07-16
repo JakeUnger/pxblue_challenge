@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // Different App Pages/Routes
 import Alerts from "../pages/alerts";
@@ -18,19 +18,21 @@ The main page body, which contains the route definitions
 */
 const Main = ({ style }) => (
   <main style={{ padding: "16px" }}>
-    <Switch>
-      <Route exact path="/alerts" component={Alerts} />
-      <Route exact path="/schedule" component={Schedule} />
-      <Route exact path="/logout" component={Logout} />
-      <Route exact path="/resources" component={Resources} />
-      <Route exact path="/eventlog" component={EventLog} />
-      <Route exact path="/settings" component={Settings} />
-      <Route exact path="/userguide" component={Userguide} />
-      <Route exact path="/profile" component={UserProfile} />
-      <Route exact path="/license" component={License} />
-      <Route exact path="/logout" component={Logout} />
-      <Route path="*" component={Home} />
-    </Switch>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/alerts" component={Alerts} />
+        <Route exact path="/schedule" component={Schedule} />
+        <Route exact path="/logout" component={Logout} />
+        <Route exact path="/resources" component={Resources} />
+        <Route exact path="/eventlog" component={EventLog} />
+        <Route exact path="/settings" component={Settings} />
+        <Route exact path="/userguide" component={Userguide} />
+        <Route exact path="/profile" component={UserProfile} />
+        <Route exact path="/license" component={License} />
+        <Route exact path="/logout" component={Logout} />
+        <Route path="*" component={Home} />
+      </Switch>
+    </BrowserRouter>
   </main>
 );
 export default Main;
