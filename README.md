@@ -1,3 +1,5 @@
+I created a Resource page I had the titles iterate through an array but was unable to add the rest of the links and corresponding images for the rest of the resources. I'm also missing half of the other resources. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
