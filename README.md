@@ -1,4 +1,15 @@
-I created a Resource page I had the titles iterate through an array but was unable to add the rest of the links and corresponding images for the rest of the resources. I'm also missing half of the other resources. 
+When opening the app I found I had to run yarn and then yarn start to open it. 
+Its pretty a straightforward Resource page with links to the first resource.
+
+Open menu bar click Resources and you will directed to the page with resources. I wanted to get all the resources to load including links and the respective link images but I was only able to get one group of list itms. 
+
+
+Bugs
+
+• It duplicates the links of the first resource down the page. 
+• Missing rest of resources. 
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
