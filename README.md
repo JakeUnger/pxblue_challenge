@@ -1,4 +1,11 @@
-When opening the app I found I had to run yarn and then yarn start to open it. 
+1. Clone the respository.
+2. Run yarn in the project directory.
+3. Run yarn add @material-ui/core
+4. Run yarn add @material-ui/icons
+5. Run yarn add @pxblue/themes
+6. Run yarn add react-router-dom
+7. yarn start
+
 Its pretty a straightforward Resource page with links to the first resource.
 
 Open menu bar click Resources and you will directed to the page with resources. I wanted to get all the resources to load including links and the respective link images but I was only able to get one group of list itms. 
