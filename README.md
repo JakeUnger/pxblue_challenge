@@ -8,7 +8,7 @@
 
 Its pretty a straightforward Resource page with links to the first resource.
 
-Open menu bar click Resources and you will directed to the page with resources. I wanted to get all the resources to load including links and the respective link images but I was only able to get one group of list itms. 
+Open menu bar click Resources and you will directed to the page with resources. I wanted to get all the resources to load including links and the respective link images but I was only able to get one group of list items. 
 
 
 Bugs
